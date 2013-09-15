@@ -8,8 +8,8 @@
  */
 
 spl_autoload_register(function ($cname) {
-    require_once("classes/" . $cname . ".php");
-    throw new Exception("Class " . $cname . " failed to load. Please verify that you uploaded the files correctly.");
+    require_once "classes/" . $cname . ".php";
+    //throw new Exception("Class " . $cname . " failed to load. Please verify that you uploaded the files correctly.");
 });
 
 class Imgur
